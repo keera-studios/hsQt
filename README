@@ -1,19 +1,28 @@
+Version 1.1.5 of the Qt bindings for Haskell, a set of Haskell bindings for the
+Qt library from Trolltech.  There are no subtantial changes to the code, but it
+now compiles with GHC 7.6 (and possibly with newer versions of GHC).
 
-hsQt is to solve some qtHaskell's problem project.
+There was a bug related to the Foreign Function Interface. In most cases that
+could be resolved by importing Foreign.C.Types, but not always.  I introduced a
+couple of extra changes to make things compile, but there is no guarantee that
+they will work. Actually, I would expect them to break. Please, try them, and
+if you can find a better solution, send a msg or a pull request.
 
-
-
---- qtHaskell version 1.1.4 original README
-
-Version 1.1.4 of qtHaskell a set of Haskell bindings for the Qt library from Trolltech.
-
-Html Documentation for this project can be found in the 'doc' folder or online at the qtHaskell web site:
-
-http://qthaskell.berlios.de
+Html Documentation for this project can be found in the 'doc' folder:
 
 The qtHaskell User Guide includes comprehensive installation instructions.
+Note: I had to modify the scripts to make it work with cabal sandboxes and to
+install files in a local directory and not /usr/local/. It's not portable, just
+customised. Let me know if you want to have access to that build.pl script.
 
+---
+
+Regarding the old version:
+
+The original version of this library used to be hosted here:
+http://qthaskell.berlios.de
+That website no longer exists.
+
+I am trying to get some experimental code working.
 
 ----
-
-
