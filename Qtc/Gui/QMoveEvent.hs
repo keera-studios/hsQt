@@ -17,6 +17,7 @@ module Qtc.Gui.QMoveEvent (
   )
   where
 
+import Foreign.C.Types
 import Qth.ClassTypes.Core
 import Qtc.Enums.Base
 

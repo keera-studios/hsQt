@@ -30,6 +30,7 @@ module Qtc.Opengl (
   )
   where
 
+import Foreign.C.Types
 import Qtc.ClassTypes.Opengl
 import Qtc.Classes.Opengl
 import Qtc.Classes.Opengl_h

@@ -29,6 +29,7 @@ module Qtc.ClassTypes.Network (
   )
   where
 
+import Foreign.C.Types
 import Qtc.Classes.Types
 import Qtc.ClassTypes.Core
 

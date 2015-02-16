@@ -52,6 +52,7 @@ module Qtc.Classes.Types (
   , addForeignPtrFinalizer
   ) where
 
+import Foreign.C.Types
 import System.IO.Unsafe (unsafePerformIO)
 import Foreign.C
 import Foreign.Ptr

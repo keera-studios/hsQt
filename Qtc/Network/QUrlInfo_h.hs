@@ -24,6 +24,7 @@ module Qtc.Network.QUrlInfo_h (
   ,QsetWritable_h(..)
   ) where
 
+import Foreign.C.Types
 import Qtc.Enums.Base
 
 import Qtc.Classes.Base

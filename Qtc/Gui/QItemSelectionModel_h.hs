@@ -14,6 +14,7 @@ module Qtc.Gui.QItemSelectionModel_h (
   Qselect_h(..)
   ) where
 
+import Foreign.C.Types
 import Qtc.Enums.Base
 import Qtc.Enums.Gui.QItemSelectionModel
 

@@ -15,6 +15,7 @@ module Qtc.Network.QTcpServer_h (
   ,QnextPendingConnection_h(..)
   ) where
 
+import Foreign.C.Types
 import Qtc.Enums.Base
 
 import Qtc.Classes.Base

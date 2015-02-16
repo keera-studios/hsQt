@@ -14,6 +14,7 @@ module Qtc.Classes.Core_h (
   QwriteData_h(..)
   ) where
 
+import Foreign.C.Types
 import Qtc.Enums.Core.Qt
 import Qtc.Enums.Core.QFile
 import Qth.ClassTypes.Core

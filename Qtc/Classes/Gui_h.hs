@@ -126,6 +126,7 @@ module Qtc.Classes.Gui_h (
   , Qwidget_h(..)
   ) where
 
+import Foreign.C.Types
 import Qtc.Enums.Core.Qt
 import Qtc.Enums.Gui.QStyle
 import Qtc.Enums.Gui.QAbstractItemView

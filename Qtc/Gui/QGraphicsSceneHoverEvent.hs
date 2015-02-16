@@ -15,6 +15,7 @@ module Qtc.Gui.QGraphicsSceneHoverEvent (
   )
   where
 
+import Foreign.C.Types
 import Qth.ClassTypes.Core
 import Qtc.Enums.Base
 import Qtc.Enums.Core.QEvent

@@ -14,6 +14,7 @@ module Qtc.Core.QFile_h (
   QfileEngine_h(..)
   ) where
 
+import Foreign.C.Types
 import Qtc.Enums.Base
 import Qtc.Enums.Core.QIODevice
 

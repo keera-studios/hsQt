@@ -15,6 +15,7 @@ module Qtc.Gui.QDesktopWidget_h (
   ,QworkAreaResized_h(..)
   ) where
 
+import Foreign.C.Types
 import Qtc.Enums.Base
 import Qtc.Enums.Gui.QPaintDevice
 import Qtc.Enums.Core.Qt

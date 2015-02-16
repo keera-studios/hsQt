@@ -14,6 +14,7 @@ module Qtc.Gui.QIconEngineV2_h (
   Qkey_h(..)
   ) where
 
+import Foreign.C.Types
 import Qtc.Enums.Base
 import Qtc.Enums.Gui.QIcon
 

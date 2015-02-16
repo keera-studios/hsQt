@@ -54,6 +54,7 @@ module Qtc.Gui.QPrinter (
   )
   where
 
+import Foreign.C.Types
 import Qth.ClassTypes.Core
 import Qtc.Enums.Base
 import Qtc.Enums.Gui.QPaintDevice

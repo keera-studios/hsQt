@@ -12,6 +12,7 @@
 
 module Qtc.Gui.QBitmap_h where
 
+import Foreign.C.Types
 import Qtc.Enums.Base
 import Qtc.Enums.Gui.QPaintDevice
 

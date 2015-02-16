@@ -15,6 +15,7 @@ module Qtc.Gui.QGraphicsItemAnimation_h (
   ,QbeforeAnimationStep_h(..)
   ) where
 
+import Foreign.C.Types
 import Qtc.Enums.Base
 
 import Qtc.Classes.Base

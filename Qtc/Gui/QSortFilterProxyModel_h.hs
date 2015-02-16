@@ -14,6 +14,7 @@ module Qtc.Gui.QSortFilterProxyModel_h (
   Qmatch_h(..)
   ) where
 
+import Foreign.C.Types
 import Qtc.Enums.Base
 import Qtc.Enums.Core.Qt
 

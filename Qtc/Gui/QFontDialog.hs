@@ -14,6 +14,7 @@ module Qtc.Gui.QFontDialog (
   )
   where
 
+import Foreign.C.Types
 import Qth.ClassTypes.Core
 import Qtc.Enums.Base
 

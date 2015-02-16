@@ -51,6 +51,7 @@ module Qtc.Network (
   )
   where
 
+import Foreign.C.Types
 import Qtc.ClassTypes.Network
 import Qtc.Classes.Network
 import Qtc.Classes.Network_h

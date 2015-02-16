@@ -12,6 +12,8 @@
 
 module Qtc.Core.QAbstractListModel_h where
 
+import Foreign.C.Types
+
 import Qtc.Enums.Base
 import Qtc.Enums.Core.Qt
 

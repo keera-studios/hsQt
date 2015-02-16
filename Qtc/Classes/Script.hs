@@ -22,6 +22,8 @@ module Qtc.Classes.Script (
   )
   where
 
+import Foreign.C.Types
+
 import Qtc.Classes.Base
 import Qtc.ClassTypes.Core
 import Qtc.Core.Base

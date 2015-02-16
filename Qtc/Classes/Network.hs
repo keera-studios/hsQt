@@ -36,6 +36,7 @@ module Qtc.Classes.Network (
   , QsocketDescriptor(..)
   ) where
 
+import Foreign.C.Types
 import Qtc.ClassTypes.Core
 import Qth.ClassTypes.Core
 import Qtc.ClassTypes.Network

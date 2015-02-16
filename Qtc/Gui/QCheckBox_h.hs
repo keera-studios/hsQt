@@ -12,6 +12,7 @@
 
 module Qtc.Gui.QCheckBox_h where
 
+import Foreign.C.Types
 import Qtc.Enums.Base
 import Qtc.Enums.Gui.QPaintDevice
 import Qtc.Enums.Core.Qt

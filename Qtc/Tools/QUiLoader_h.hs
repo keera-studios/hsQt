@@ -16,6 +16,7 @@ module Qtc.Tools.QUiLoader_h (
   ,QcreateLayout_h(..)
   ) where
 
+import Foreign.C.Types
 import Qtc.Enums.Base
 
 import Qtc.Classes.Base

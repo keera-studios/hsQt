@@ -17,6 +17,7 @@ module Qtc.Gui.QIntValidator (
   )
   where
 
+import Foreign.C.Types
 import Qth.ClassTypes.Core
 import Qtc.Enums.Base
 

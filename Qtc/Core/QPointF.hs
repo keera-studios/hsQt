@@ -18,6 +18,8 @@ module Qtc.Core.QPointF (
   )
   where
 
+import Foreign.C.Types
+
 import Qth.ClassTypes.Core
 import Qtc.Enums.Base
 

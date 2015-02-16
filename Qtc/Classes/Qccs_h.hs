@@ -89,6 +89,7 @@ module Qtc.Classes.Qccs_h (
   , QwheelEvent_h(..)
   ) where
 
+import Foreign.C.Types
 import Qtc.Enums.Core.Qt
 import Qtc.ClassTypes.Core
 import Qth.ClassTypes.Core

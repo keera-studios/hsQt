@@ -81,6 +81,7 @@ module Qtc.Classes.Core (
   , Qqy2(..)
   ) where
 
+import Foreign.C.Types
 import Qtc.Enums.Core.Qt
 import Qtc.Enums.Core.QFile
 import Qth.ClassTypes.Core

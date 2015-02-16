@@ -14,6 +14,7 @@ module Qtc.Core.QTranslator_h (
   Qqtranslate_h(..)
   ) where
 
+import Foreign.C.Types
 import Qtc.Enums.Base
 
 import Qtc.Classes.Base

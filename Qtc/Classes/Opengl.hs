@@ -20,6 +20,7 @@ module Qtc.Classes.Opengl (
   , QswapBuffers(..)
   ) where
 
+import Foreign.C.Types
 import Qtc.ClassTypes.Core
 import Qth.ClassTypes.Core
 import Qtc.ClassTypes.Gui

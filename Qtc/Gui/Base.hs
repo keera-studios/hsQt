@@ -23,6 +23,7 @@ module Qtc.Gui.Base (
   )
   where
 
+import Foreign.C.Types
 import Qtc.Classes.Base
 import Qtc.Classes.Qccs
 import Qtc.Classes.Gui

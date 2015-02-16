@@ -14,6 +14,7 @@ module Qtc.Gui.QSyntaxHighlighter_h (
   QhighlightBlock_h(..)
   ) where
 
+import Foreign.C.Types
 import Qtc.Enums.Base
 
 import Qtc.Classes.Base

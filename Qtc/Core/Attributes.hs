@@ -109,6 +109,7 @@ module Qtc.Core.Attributes (
   ,switch, switch_
   ) where
 
+import Foreign.C.Types
 import Qtc.ClassTypes.Core
 import Qtc.Core.Base
 import Qtc.Classes.Base

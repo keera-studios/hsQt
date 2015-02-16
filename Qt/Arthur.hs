@@ -16,6 +16,7 @@ module Qt.Arthur (
   )
   where
 
+import Foreign.C.Types
 import Qt.Arthur.Style
 import Qt.Arthur.Frame
 

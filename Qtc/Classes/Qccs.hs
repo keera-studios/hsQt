@@ -258,6 +258,7 @@ module Qtc.Classes.Qccs (
   , Qqy(..)
   ) where
 
+import Foreign.C.Types
 import Qtc.Enums.Core.Qt
 import Qtc.Enums.Core.QDir
 import Qtc.ClassTypes.Core

@@ -46,6 +46,8 @@ module Qtc.Core.QVariant (
   )
   where
 
+import Foreign.C.Types
+
 import Qtc.Classes.Base
 import Qtc.Classes.Qccs
 import Qtc.ClassTypes.Core

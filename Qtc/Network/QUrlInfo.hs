@@ -26,6 +26,7 @@ module Qtc.Network.QUrlInfo (
   )
   where
 
+import Foreign.C.Types
 import Qth.ClassTypes.Core
 import Qtc.Enums.Base
 

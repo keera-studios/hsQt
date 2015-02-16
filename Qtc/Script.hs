@@ -16,6 +16,7 @@ module Qtc.Script (
   )
   where
 
+import Foreign.C.Types
 import Qtc.ClassTypes.Script
 import Qtc.Classes.Script
 

@@ -20,6 +20,7 @@ module Qtc.Gui.QDialogButtonBox (
   )
   where
 
+import Foreign.C.Types
 import Qth.ClassTypes.Core
 import Qtc.Enums.Base
 import Qtc.Enums.Gui.QPaintDevice

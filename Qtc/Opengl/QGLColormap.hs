@@ -21,6 +21,7 @@ module Qtc.Opengl.QGLColormap (
   )
   where
 
+import Foreign.C.Types
 import Qth.ClassTypes.Core
 import Qtc.Enums.Base
 

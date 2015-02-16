@@ -12,6 +12,7 @@
 
 module Qtc.Gui.QRegExpValidator_h where
 
+import Foreign.C.Types
 import Qtc.Enums.Base
 
 import Qtc.Classes.Base

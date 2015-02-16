@@ -46,6 +46,8 @@ import Qtc.ClassTypes.Core
 import Qtc.ClassTypes.Gui
 import System.Mem
 import Control.Concurrent
+import Foreign.C.Types(CInt(..))
+import Foreign.Ptr(FunPtr(..), Ptr(..))
 {-
 instance Ord (QObject a)  where
  (<) x1 x2
@@ -383,7 +385,7 @@ foreign import ccall "wrapper" wrapSlotHandler_bool :: (Ptr fun -> Ptr state -> 
 
 foreign import ccall "qtc_connectSlot_ptr" qtc_connectSlot_ptr :: Ptr (TQObject a) -> CWString -> Ptr (TQObject b) -> CWString -> Ptr (Ptr fun -> Ptr state -> Ptr (TQObject c) -> Ptr d -> IO ()) -> Ptr () -> IO ()
 
-foreign import ccall "wrapper" wrapSlotHandler_ptr :: (Ptr fun -> Ptr state -> Ptr (TQObject c) -> Ptr d -> IO ()) -> IO (FunPtr (Ptr fun -> Ptr state -> Ptr (TQObject c) -> Ptr (TQObject d) -> IO ()))
+foreign import ccall "wrapper" wrapSlotHandler_ptr :: (Ptr fun -> Ptr state -> Ptr (TQObject c) -> Ptr d -> IO ()) -> IO (FunPtr (Ptr fun -> Ptr state -> Ptr (TQObject c) -> Ptr d -> IO ()))
 
 foreign import ccall "qtc_connectSlot_str" qtc_connectSlot_str :: Ptr (TQObject a) -> CWString -> Ptr (TQObject b) -> CWString -> Ptr (Ptr fun -> Ptr state -> Ptr (TQObject c) -> Ptr (TQString ()) -> IO ()) -> Ptr () -> IO ()
 

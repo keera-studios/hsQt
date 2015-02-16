@@ -14,6 +14,7 @@ module Qtc.Core.QTimeLine_h (
   QvalueForTime_h(..)
   ) where
 
+import Foreign.C.Types
 import Qtc.Enums.Base
 
 import Qtc.Classes.Base

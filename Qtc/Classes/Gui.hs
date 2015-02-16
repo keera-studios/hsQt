@@ -775,6 +775,7 @@ module Qtc.Classes.Gui (
   , QzValue(..)
   ) where
 
+import Foreign.C.Types
 import Qtc.Enums.Core.Qt
 import Qtc.Enums.Gui.QStyle
 import Qtc.Enums.Gui.QAbstractItemView

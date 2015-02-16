@@ -23,6 +23,7 @@ module Qtc.Opengl.QGLWidget_h (
   ,QupdateOverlayGL_h(..)
   ) where
 
+import Foreign.C.Types
 import Qtc.Enums.Base
 import Qtc.Enums.Gui.QPaintDevice
 import Qtc.Enums.Core.Qt

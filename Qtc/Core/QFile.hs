@@ -31,6 +31,7 @@ module Qtc.Core.QFile (
   )
   where
 
+import Foreign.C.Types
 import Qth.ClassTypes.Core
 import Qtc.Enums.Base
 import Qtc.Enums.Core.QIODevice

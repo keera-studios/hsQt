@@ -17,6 +17,7 @@ module Qtc.Gui.QItemEditorCreatorBase (
   )
   where
 
+import Foreign.C.Types
 import Qth.ClassTypes.Core
 import Qtc.Enums.Base
 

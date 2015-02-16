@@ -15,6 +15,7 @@ module Qtc.ClassTypes.Tools (
   )
   where
 
+import Foreign.C.Types
 import Qtc.Classes.Types
 import Qtc.ClassTypes.Core
 import Qtc.ClassTypes.Gui

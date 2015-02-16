@@ -16,6 +16,7 @@ module Qtc.Enums.Gui.QStyleOptionProgressBar (
  )
  where
 
+import Foreign.C.Types
 import Qtc.Classes.Base
 import Qtc.ClassTypes.Core (QObject, TQObject, qObjectFromPtr)
 import Qtc.Core.Base (Qcs, connectSlot, qtc_connectSlot_int, wrapSlotHandler_int)

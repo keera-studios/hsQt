@@ -33,6 +33,7 @@ module Qtc.Gui.QListView (
   )
   where
 
+import Foreign.C.Types
 import Qth.ClassTypes.Core
 import Qtc.Enums.Base
 import Qtc.Enums.Gui.QItemSelectionModel

@@ -20,6 +20,7 @@ module Qt.Arthur.Frame (
  , arthurFrame_loadSourceFile, arthurFrame_showSource
  ) where
 
+import Foreign.C.Types
 import Qtc.Enums.Classes.Core
 import Qth.ClassTypes.Core
 import Qth.Core

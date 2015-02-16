@@ -17,6 +17,7 @@ module Qtc.Gui.QStyleOptionTabV2 (
   )
   where
 
+import Foreign.C.Types
 import Qth.ClassTypes.Core
 import Qtc.Enums.Base
 

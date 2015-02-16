@@ -12,6 +12,7 @@
 
 module Qtc.Gui.QGraphicsItem_h where
 
+import Foreign.C.Types
 import Qtc.Enums.Base
 import Qtc.Enums.Core.Qt
 import Qtc.Enums.Gui.QGraphicsItem

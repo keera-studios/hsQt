@@ -18,6 +18,7 @@ module Qtc.Gui.QConicalGradient (
   )
   where
 
+import Foreign.C.Types
 import Qth.ClassTypes.Core
 import Qtc.Enums.Base
 

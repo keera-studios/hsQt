@@ -18,6 +18,7 @@ module Qtc.Gui.QFontMetrics (
   )
   where
 
+import Foreign.C.Types
 import Qth.ClassTypes.Core
 import Qtc.Enums.Base
 import Qtc.Enums.Core.Qt

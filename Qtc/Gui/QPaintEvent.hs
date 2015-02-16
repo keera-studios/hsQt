@@ -18,6 +18,7 @@ module Qtc.Gui.QPaintEvent (
   )
   where
 
+import Foreign.C.Types
 import Qth.ClassTypes.Core
 import Qtc.Enums.Base
 

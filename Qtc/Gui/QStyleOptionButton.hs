@@ -17,6 +17,7 @@ module Qtc.Gui.QStyleOptionButton (
   )
   where
 
+import Foreign.C.Types
 import Qth.ClassTypes.Core
 import Qtc.Enums.Base
 import Qtc.Enums.Gui.QStyleOptionButton

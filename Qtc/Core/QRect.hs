@@ -17,6 +17,8 @@ module Qtc.Core.QRect (
   )
   where
 
+import Foreign.C.Types
+
 import Qth.ClassTypes.Core
 import Qtc.Enums.Base
 

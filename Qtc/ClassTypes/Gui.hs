@@ -269,6 +269,7 @@ module Qtc.ClassTypes.Gui (
   )
   where
 
+import Foreign.C.Types
 import Qtc.Classes.Types
 import Qtc.ClassTypes.Core
 

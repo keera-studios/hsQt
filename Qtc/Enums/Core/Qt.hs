@@ -80,6 +80,7 @@ import Qtc.ClassTypes.Core (QObject, TQObject, qObjectFromPtr)
 import Qtc.Core.Base (Qcs, connectSlot, qtc_connectSlot_int, wrapSlotHandler_int)
 import Qtc.Enums.Base
 import Qtc.Enums.Classes.Core
+import Foreign.C.Types
 
 class Qcsm x where
   connectSlotM :: QObject a -> String -> QObject b -> String -> ConnectionType -> x -> IO ()
@@ -227,7 +228,7 @@ foreign import ccall "wrapper" wrapSlotHandler_bool_m :: (Ptr fun -> Ptr state -
 
 foreign import ccall "qtc_connectSlot_ptr_m" qtc_connectSlot_ptr_m :: Ptr (TQObject a) -> CWString -> Ptr (TQObject b) -> CWString -> CLong -> Ptr (Ptr fun -> Ptr state -> Ptr (TQObject c) -> Ptr d -> IO ()) -> Ptr () -> IO ()
 
-foreign import ccall "wrapper" wrapSlotHandler_ptr_m :: (Ptr fun -> Ptr state -> Ptr (TQObject c) -> Ptr d -> IO ()) -> IO (FunPtr (Ptr fun -> Ptr state -> Ptr (TQObject c) -> Ptr (TQObject d) -> IO ()))
+foreign import ccall "wrapper" wrapSlotHandler_ptr_m :: (Ptr fun -> Ptr state -> Ptr (TQObject c) -> Ptr d -> IO ()) -> IO (FunPtr (Ptr fun -> Ptr state -> Ptr (TQObject c) -> Ptr d -> IO ()))
 
 foreign import ccall "qtc_connectSlot_str_m" qtc_connectSlot_str_m :: Ptr (TQObject a) -> CWString -> Ptr (TQObject b) -> CWString -> CLong -> Ptr (Ptr fun -> Ptr state -> Ptr (TQObject c) -> Ptr (TQString ()) -> IO ()) -> Ptr () -> IO ()
 

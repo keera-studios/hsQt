@@ -14,6 +14,7 @@ module Qtc.Classes.Object (
  Object(..), objectNull, objectIsNull, objectCast, objectFromPtr, objectFromPtr_nf, withObjectPtr, ptrFromObject, objectListFromPtrList, objectListFromPtrList_nf
  ) where
 
+import Foreign.C.Types
 import Control.Exception 
 import System.IO.Unsafe( unsafePerformIO )
 import Foreign.C

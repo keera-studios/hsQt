@@ -19,6 +19,7 @@ module Qtc.Tools (
   )
   where
 
+import Foreign.C.Types
 import Qtc.ClassTypes.Tools
 import Qtc.Classes.Tools
 import Qtc.Classes.Tools_h

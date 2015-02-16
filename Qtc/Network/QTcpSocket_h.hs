@@ -12,6 +12,7 @@
 
 module Qtc.Network.QTcpSocket_h where
 
+import Foreign.C.Types
 import Qtc.Enums.Base
 import Qtc.Enums.Core.QIODevice
 import Qtc.Enums.Network.QAbstractSocket

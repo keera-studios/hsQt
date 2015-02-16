@@ -12,6 +12,7 @@
 
 module Qtc.Gui.QStyle_h where
 
+import Foreign.C.Types
 import Qtc.Enums.Base
 import Qtc.Enums.Gui.QPalette
 import Qtc.Enums.Core.Qt

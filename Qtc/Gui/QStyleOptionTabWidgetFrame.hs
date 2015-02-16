@@ -23,6 +23,7 @@ module Qtc.Gui.QStyleOptionTabWidgetFrame (
   )
   where
 
+import Foreign.C.Types
 import Qth.ClassTypes.Core
 import Qtc.Enums.Base
 import Qtc.Enums.Gui.QTabBar

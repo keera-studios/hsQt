@@ -59,6 +59,7 @@ module Qtc.Opengl.QGLFormat (
   )
   where
 
+import Foreign.C.Types
 import Qth.ClassTypes.Core
 import Qtc.Enums.Base
 import Qtc.Enums.Opengl.QGL

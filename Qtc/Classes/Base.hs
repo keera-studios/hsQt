@@ -20,6 +20,7 @@ module Qtc.Classes.Base (
   )
   where
 
+import Foreign.C.Types
 import Qtc.Classes.Types
 import System.Environment( getProgName, getArgs )
 import System.IO.Unsafe( unsafePerformIO )

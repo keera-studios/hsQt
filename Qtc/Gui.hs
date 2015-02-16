@@ -510,6 +510,7 @@ module Qtc.Gui (
   )
   where
 
+import Foreign.C.Types
 import Qtc.Gui.Base
 import Qtc.ClassTypes.Gui
 import Qtc.Classes.Gui

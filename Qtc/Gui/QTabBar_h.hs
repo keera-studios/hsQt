@@ -15,6 +15,7 @@ module Qtc.Gui.QTabBar_h (
   ,QtabSizeHint_h(..), QqtabSizeHint_h(..)
   ) where
 
+import Foreign.C.Types
 import Qtc.Enums.Base
 import Qtc.Enums.Gui.QPaintDevice
 import Qtc.Enums.Core.Qt

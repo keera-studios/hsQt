@@ -14,6 +14,7 @@ module Qt.Arthur.Style (
  cached, ArthurStyle, CArthurStyle, arthurStyle, drawHoverRect
  ) where
 
+import Foreign.C.Types
 import Qtc.Enums.Classes.Core
 import Qth.ClassTypes.Core
 import Qth.Core

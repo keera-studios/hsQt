@@ -17,6 +17,7 @@ module Qtc.Gui.QDragEnterEvent (
   )
   where
 
+import Foreign.C.Types
 import Qth.ClassTypes.Core
 import Qtc.Enums.Base
 import Qtc.Enums.Core.Qt

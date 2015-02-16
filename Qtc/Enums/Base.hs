@@ -16,6 +16,7 @@ module Qtc.Enums.Base (
   )
   where
 
+import Foreign.C.Types
 import Data.Bits
 import Foreign.C
 

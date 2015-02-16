@@ -95,6 +95,7 @@ module Qtc.Core (
   )
   where
 
+import Foreign.C.Types
 import Qtc.Classes.Base
 import Qtc.Core.Attributes
 import Qtc.Core.Base

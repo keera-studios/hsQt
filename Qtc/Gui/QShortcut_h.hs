@@ -12,6 +12,7 @@
 
 module Qtc.Gui.QShortcut_h where
 
+import Foreign.C.Types
 import Qtc.Enums.Base
 
 import Qtc.Classes.Base

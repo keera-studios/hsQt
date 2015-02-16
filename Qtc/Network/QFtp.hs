@@ -26,6 +26,7 @@ module Qtc.Network.QFtp (
   )
   where
 
+import Foreign.C.Types
 import Qth.ClassTypes.Core
 import Qtc.Enums.Base
 import Qtc.Enums.Network.QFtp

@@ -16,6 +16,7 @@ module Qtc.Classes.Network_h (
   , QtoString_h(..)
   ) where
 
+import Foreign.C.Types
 import Qtc.ClassTypes.Core
 import Qth.ClassTypes.Core
 import Qtc.ClassTypes.Network

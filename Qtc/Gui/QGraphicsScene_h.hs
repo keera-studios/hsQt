@@ -14,6 +14,7 @@ module Qtc.Gui.QGraphicsScene_h (
   QhelpEvent_h(..)
   ) where
 
+import Foreign.C.Types
 import Qtc.Enums.Base
 import Qtc.Enums.Core.Qt
 

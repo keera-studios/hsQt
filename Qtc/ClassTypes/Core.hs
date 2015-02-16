@@ -61,6 +61,7 @@ module Qtc.ClassTypes.Core (
   )
   where
 
+import Foreign.C.Types
 import Qtc.Classes.Types
 
 type QObject a = Object (CQObject a)
