@@ -8,9 +8,10 @@ couple of extra changes to make things compile, but there is no guarantee that
 they will work. Actually, I would expect them to break. Please, try them, and
 if you can find a better solution, send a msg or a pull request.
 
-Html Documentation for this project can be found in the 'doc' folder:
-
+Html Documentation for this project can be found in the 'doc' folder.
 The qtHaskell User Guide includes comprehensive installation instructions.
+See examples/ and demos/ for code examples.
+
 Note: I had to modify the scripts to make it work with cabal sandboxes and to
 install files in a local directory and not /usr/local/. It's not portable, just
 customised. Let me know if you want to have access to that build.pl script.
@@ -22,7 +23,3 @@ Regarding the old version:
 The original version of this library used to be hosted here:
 http://qthaskell.berlios.de
 That website no longer exists.
-
-I am trying to get some experimental code working.
-
-----
