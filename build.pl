@@ -261,7 +261,7 @@ my $hsksudo = "";
 my $ldconfig = ($iswin || $ismacos) ? "" : "ldconfig";
 my $cd = getcwd; $cd =~ s/\//\\/g if $iswin;
 my $cdir = "qws";
-my $rgSu = "runghc Setup.hs";
+my $rgSu = "cabal";
 my $cfn = "qt\.cabal";
 my $winmk = "mingw32-make";
 my $lingmk = "gmake";
@@ -334,9 +334,9 @@ my $hp = "ghc";
 if ($islinux) {cbtod \$hp, "which ghc"}
 my $rgfSu = $rgSu; $rgfSu =~ s/runghc/runghc -f $hp/;
 cbtod \my $hpv, "ghc --numeric-version";
-cbtod \my $vogl, "ghc-pkg latest OpenGL";
-cbtod \my $vbse, "ghc-pkg latest base";
-cbtod \my $vh98, "ghc-pkg latest haskell98";
+cbtod \my $vogl, "cabal exec ghc-pkg latest OpenGL";
+cbtod \my $vbse, "cabal exec ghc-pkg latest base";
+cbtod \my $vh98, "cabal exec ghc-pkg latest haskell98";
 if ($iswin) {
 	my $eld = "Extra-lib-dirs";
 	open(CFH, '<', $cfn) or die "$cfn not found";
@@ -912,7 +912,7 @@ if ($hsk) {
 		}
 	}
 	if ($con) {
-		sys_ds "$rgSu configure --ghc $cfusr $rsp";
+		sys_ds "$rgSu configure $cfusr $rsp";
 		if ((not $ghcfv) or $iswin) {
 			my $at = my $mt = time;
 			utime $at, $mt, $mk612 or die "utime $mk612: $!\n";
@@ -933,8 +933,9 @@ if ($hsk) {
 		}
 		else {
 			if (-e "Makefile") {unlink "Makefile"};
-			sys_ds "$rgSu makefile";
-			sys_ds "$mk$hj EXTRA-LD-OPTS=$xld VANILLA_WAY=YES";
+			sys_ds "$rgSu build";
+			sys_ds "$rgSu install";
+			# sys_ds "$mk$hj EXTRA-LD-OPTS=$xld VANILLA_WAY=YES";
 		}
 	}
 	if ($ins && $hin) {
@@ -995,7 +996,7 @@ if ($hsk) {
 				if ($xpu || $xpa) {
 					cdod $cdd;
 					if ($rxr && ($xpu || ($xpa && ($xpv & $xp_f)))) {
-						sys_ds "$rgSu configure --ghc $cfusr $rsp";
+						sys_ds "$rgSu configure $cfusr $rsp";
 					}
 					if ($rxu && ($xpu || ($xpa && ($xpv & $xp_b)))) {
 						sys_ds "$rgSu build";
