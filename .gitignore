@@ -1,0 +1,12 @@
+examples/*
+!examples/*.*
+*.hi
+*.o
+.cabal-sandbox/
+cabal.sandbox.config
+qws/bin
+dist/
+qws/Makefile
+qws/**/Makefile*
+*stub.h
+qws/.moc
