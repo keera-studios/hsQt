@@ -1,6 +1,6 @@
-Version 1.1.5 of the Qt bindings for Haskell, a set of Haskell bindings for the
+Version 1.1.6.1 of the Qt bindings for Haskell, a set of Haskell bindings for the
 Qt library from Trolltech.  There are no subtantial changes to the code, but it
-now compiles with GHC 7.6 (and possibly with newer versions of GHC).
+now compiles with GHC 7.8.
 
 There was a bug related to the Foreign Function Interface. In most cases that
 could be resolved by importing Foreign.C.Types, but not always.  I introduced a
@@ -11,15 +11,3 @@ if you can find a better solution, send a msg or a pull request.
 Html Documentation for this project can be found in the 'doc' folder.
 The qtHaskell User Guide includes comprehensive installation instructions.
 See examples/ and demos/ for code examples.
-
-Note: I had to modify the scripts to make it work with cabal sandboxes and to
-install files in a local directory and not /usr/local/. It's not portable, just
-customised. Let me know if you want to have access to that build.pl script.
-
----
-
-Regarding the old version:
-
-The original version of this library used to be hosted here:
-http://qthaskell.berlios.de
-That website no longer exists.
