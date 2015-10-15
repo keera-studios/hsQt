@@ -22,6 +22,60 @@ Description: Qt bindings
 Build-type: Simple
 Cabal-version: >= 1.6
 Category: Graphics
+Extra-Source-Files: qws/src/*.cpp
+                  , qws/src/gui/*.cpp
+                  , qws/src/core/*.cpp
+                  , qws/src/opengl/*.cpp
+                  , qws/src/network/*.cpp
+                  , qws/src/tools/*.cpp
+                  , qws/include/*.h
+                  , qws/include/gui/*.h
+                  , qws/include/core/*.h
+                  , qws/include/opengl/*.h
+                  , qws/include/network/*.h
+                  , qws/include/tools/*.h
+                  , Qtc/include/gui/*.h
+                  , Qtc/include/core/*.h
+                  , Qtc/include/opengl/*.h
+                  , Qtc/include/network/*.h
+                  , Qtc/include/tools/*.h
+                  , qws/qtc_gui/qtc_gui.pro
+                  , qws/qtc.pro
+                  , qws/qtc_opengl/qtc_opengl.pro
+                  , qws/qtc_core/qtc_core.pro
+                  , qws/qtc_script/qtc_script.pro
+                  , qws/qtc_network/qtc_network.pro
+                  , qws/qtc_tools/qtc_tools.pro
+                  , build
+                  , build.bat
+                  , build.pl
+                  , Makefile_612px
+                  , Makefile_612pxd
+                  , Makefile_612px_MSWin32
+                  , bin/*.bat
+                  , bin/qhc
+                  , bin/qhcds
+                  , bin/qbe
+                  , bin/qhcs
+                  , bin/qhcd
+                  , bin/qbe2
+                  , README
+                  , examples/*.hs
+                  , examples/*.rcc
+                  , examples/*.qrc
+                  , examples/*.ui
+                  , examples/*.js
+                  , examples/*.qm
+                  , examples/images/*.png
+                  , demos/*.hs
+                  , demos/*.rcc
+                  , demos/*.qrc
+                  , demos/*.ui
+                  , demos/images/*.png
+                  , extra-pkgs/Glome/glome.cabal
+                  , extra-pkgs/Glome/Setup.hs
+                  , extra-pkgs/Glome/Qt/Glome/*.hs
+                  , extra-pkgs/Glome/Qt/*.hs
 
 Library
   Build-Depends: base >= 4 && < 5, OpenGL
