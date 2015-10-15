@@ -60,6 +60,7 @@ import Foreign.ForeignPtr
 import Foreign.Storable
 import Foreign.Marshal.Alloc
 import Foreign.Marshal.Array
+import Foreign.ForeignPtr.Unsafe as U
 
 import Qtc.Classes.Object
 type QVoid a = Object (CQVoid a)
@@ -499,7 +500,7 @@ fptrNull = newForeignPtr_ nullPtr
 
 fptrIsNull :: ForeignPtr a -> Bool
 fptrIsNull fp
-  = ((unsafeForeignPtrToPtr fp) == ptrNull)
+  = ((U.unsafeForeignPtrToPtr fp) == ptrNull)
 
 fptrCast :: ForeignPtr a -> ForeignPtr b
 fptrCast p = castForeignPtr p

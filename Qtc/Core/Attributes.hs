@@ -1,4 +1,5 @@
 {-# OPTIONS -fglasgow-exts -XOverlappingInstances -XUndecidableInstances#-}
+{-# LANGUAGE AllowAmbiguousTypes #-}
 -----------------------------------------------------------------------------
 {-| Module    : Attributes.hs
     Copyright : (c) David Harley 2010

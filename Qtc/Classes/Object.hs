@@ -14,15 +14,16 @@ module Qtc.Classes.Object (
  Object(..), objectNull, objectIsNull, objectCast, objectFromPtr, objectFromPtr_nf, withObjectPtr, ptrFromObject, objectListFromPtrList, objectListFromPtrList_nf
  ) where
 
-import Foreign.C.Types
-import Control.Exception 
-import System.IO.Unsafe( unsafePerformIO )
+import Control.Exception
 import Foreign.C
-import Foreign.Ptr 
-import Foreign.ForeignPtr 
-import Foreign.Storable
+import Foreign.C.Types
+import Foreign.ForeignPtr
+import Foreign.ForeignPtr.Unsafe as U
 import Foreign.Marshal.Alloc
 import Foreign.Marshal.Array
+import Foreign.Ptr
+import Foreign.Storable
+import System.IO.Unsafe( unsafePerformIO )
 
 data Object a = Object ! (ForeignPtr a)
 
@@ -74,7 +75,7 @@ objectFromPtr_nf p
     return $ Object nfp
 
 ptrFromObject :: Object a -> Ptr a
-ptrFromObject (Object fp) = unsafeForeignPtrToPtr fp
+ptrFromObject (Object fp) = U.unsafeForeignPtrToPtr fp
 
 objectListFromPtrList :: FunPtr (Ptr a -> IO ()) -> [Ptr a] -> IO [Object a]
 objectListFromPtrList f pl = objectListFromPtrList_r f [] pl
