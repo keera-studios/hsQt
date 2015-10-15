@@ -4,7 +4,7 @@ Author:		Jim Snow (parts David Harley)
 Homepage:	http://qthaskell.berlios.de/
 License: AllRightsReserved
 Copyright: Copyright 2008 Jim Snow (parts copyright David Harley 2009)
-Build-Depends: qt, base, haskell98, time, parallel, OpenGL, random, array
+Build-Depends: qt, base, time, parallel, OpenGL, random, array
 build-type: Simple
 ghc-options: -fglasgow-exts -funbox-strict-fields -threaded
 extensions: BangPatterns 

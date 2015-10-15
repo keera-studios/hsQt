@@ -25,8 +25,7 @@ import Qtc.Gui.QProgressDialog
 import Data.Maybe( fromMaybe )
 import Control.Parallel.Strategies
 import System.Exit
-import IO
-import System
+import System.IO
 
 maxdepth = 2 -- recursion depth for reflection/refraction
 
