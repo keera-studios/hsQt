@@ -15,7 +15,7 @@ Version: 1.1.6
 Author: David Harley
 Homepage: http://github.com/keerastudios/hsQt
 Maintainer: Ivan Perez <ivan.perez@keera.co.uk>
-License: AllRightsReserved
+License: OtherLicense
 License-file: LICENSE
 Synopsis: Qt bindings
 Description: Qt bindings
