@@ -1,4 +1,4 @@
-Version 1.1.6.1 of the Qt bindings for Haskell, a set of Haskell bindings for the
+Version 1.1.6.1 of the Qt4 bindings for Haskell, a set of Haskell bindings for the
 Qt library from Trolltech.  There are no subtantial changes to the code, but it
 now compiles with GHC 7.8.
 
