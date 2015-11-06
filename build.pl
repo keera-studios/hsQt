@@ -1,14 +1,14 @@
 #!/usr/bin/env perl
 #############################################################################
-##      
+##
 ##      File      : build.pl
 ##      Copyright : (c) David Harley 2010
 ##      Project   : qtHaskell
 ##      Version   : 1.1.4
 ##      Modified  : 2010-09-02 17:01:40
-##      
+##
 ##      Warning   : this file is machine generated - do not modify.
-##      
+##
 #############################################################################
 
 sub usage {
@@ -74,9 +74,9 @@ sub usage {
 	print "  --[no-](haskell|hsl)-sudo         enable/disable sudo command for haskell install phase on non-windows systems. Enabled by default unless --user flag is enabled\n";
 	print "  --[no-]ldconfig                   enable/disable ldconfig command for cpp and install phases on non-windows systems. Enabled by default\n";
 	print "  --[no-]user                       enable/disable --user flag for haskell cabal configure command. Disabled by default\n";
-  print "  --(disable|enable)-shared         enable/disable build of dynamic linking package (currently linux only). Disabled by default\n";               
-  print "  --(disable|enable)-ld             enable/disable full ld build on windows (disabled by default as very slow)\n";               
-  print "  --[no-](extra-|x)ld-opt=ldoption  sets extra ld option to pass to haskell build makefile\n";              
+  print "  --(disable|enable)-shared         enable/disable build of dynamic linking package (currently linux only). Disabled by default\n";
+  print "  --(disable|enable)-ld             enable/disable full ld build on windows (disabled by default as very slow)\n";
+  print "  --[no-](extra-|x)ld-opt=ldoption  sets extra ld option to pass to haskell build makefile\n";
   print "Notes: All configure, build and install phases are enabled by default.\n";
   print "       The first phase control flag encountered, if not prefixed by \"--no-,\n";
   print "       -- or -n in a single letter sequence\" will negate all other phase\n";
@@ -156,9 +156,9 @@ sub sys_ds {
 }
 
 sub sys_ds_pmf {
-	my ($mk, $mk612, $xld, $hp, $hpv, $vogl, $vbse, $vh98, $vw, $way, $ar, $ld, $clean) = @_; 
+	my ($mk, $mk612, $xld, $hp, $hpv, $vogl, $vbse, $vh98, $vw, $way, $ar, $ld, $clean) = @_;
   my $cfuyn = $cfusr eq "--user" ? "" : "-no-user-package-conf";
-	sys_ds "$mk$hj -f $mk612 CFUSR=$cfuyn EXTRA_LD_OPTS=$xld GHC=$hp GHC_VERSION=$hpv OpenGL_VERSION=$vogl base_VERSION=$vbse haskell98_VERSION=$vh98 VANILLA_WAY=$vw $way AR=$ar LD=$ld $clean"; 
+	sys_ds "$mk$hj -f $mk612 CFUSR=$cfuyn EXTRA_LD_OPTS=$xld GHC=$hp GHC_VERSION=$hpv OpenGL_VERSION=$vogl base_VERSION=$vbse haskell98_VERSION=$vh98 VANILLA_WAY=$vw $way AR=$ar LD=$ld $clean";
 }
 
 sub cbtod {
@@ -333,10 +333,10 @@ if ($iswin && not $ghcfv) {
 my $hp = "ghc";
 if ($islinux) {cbtod \$hp, "which ghc"}
 my $rgfSu = $rgSu; $rgfSu =~ s/runghc/runghc -f $hp/;
-cbtod \my $hpv, "ghc --numeric-version";
-cbtod \my $vogl, "cabal exec ghc-pkg latest OpenGL";
-cbtod \my $vbse, "cabal exec ghc-pkg latest base";
-cbtod \my $vh98, "cabal exec ghc-pkg latest haskell98";
+cbtod \my $hpv, "cabal exec -- ghc --numeric-version";
+cbtod \my $vogl, "cabal exec -- ghc-pkg latest OpenGL";
+cbtod \my $vbse, "cabal exec -- ghc-pkg latest base";
+cbtod \my $vh98, "cabal exec -- ghc-pkg latest haskell98";
 if ($iswin) {
 	my $eld = "Extra-lib-dirs";
 	open(CFH, '<', $cfn) or die "$cfn not found";
@@ -354,7 +354,7 @@ if ($iswin) {
 	$qhc = "call qhcc";
 } else {
 	$qhc = "$cd/bin/qhc";
-}		
+}
 
 sub get_xps {
 	my $dr = "$cd/$ep";
@@ -746,16 +746,16 @@ foreach my $arg (@ARGV) {
 							my $lv = $2;
 							foreach my $cp (split //, $lv) {
 								given($cp) {
-									when(/^w$/) {$cv = $ln ? $cv & $xp_ni : $cv | $xp_i}	 
-									when(/^u$/) {$cv = $ln ? $cv & $xp_nb : $cv | $xp_b}	 
-									when(/^r$/) {$cv = $ln ? $cv & $xp_nc : $cv | $xp_c}	 
-									when(/^p$/) {$cv = $ln ? $cv & $xp_ne & $xp_nd : $cv | $xp_e | $xp_d}	 
-									when(/^o$/) {$cv = $ln ? $cv & $xp_ne : $cv | $xp_e}	 
-									when(/^l$/) {$cv = $ln ? $cv & $xp_ne : $cv | $xp_d}	 
-									when(/^U$/) {$cv = $ln ? $cv & $xp_ncc & $xp_nb : $cv | $xp_cc | $xp_b}	 
-									when(/^P$/) {$cv = $ln ? $cv & $xp_nce &$xp_ncd & $xp_ne & $xp_nd : $cv | $xp_ce | $xp_cd | $xp_e | $xp_d}	 
-									when(/^O$/) {$cv = $ln ? $cv & $xp_nce & $xp_ne : $cv | $xp_ce | $xp_e}	 
-									when(/^L$/) {$cv = $ln ? $cv & $xp_ncd & $xp_nd : $cv | $xp_cd | $xp_d}	 
+									when(/^w$/) {$cv = $ln ? $cv & $xp_ni : $cv | $xp_i}
+									when(/^u$/) {$cv = $ln ? $cv & $xp_nb : $cv | $xp_b}
+									when(/^r$/) {$cv = $ln ? $cv & $xp_nc : $cv | $xp_c}
+									when(/^p$/) {$cv = $ln ? $cv & $xp_ne & $xp_nd : $cv | $xp_e | $xp_d}
+									when(/^o$/) {$cv = $ln ? $cv & $xp_ne : $cv | $xp_e}
+									when(/^l$/) {$cv = $ln ? $cv & $xp_ne : $cv | $xp_d}
+									when(/^U$/) {$cv = $ln ? $cv & $xp_ncc & $xp_nb : $cv | $xp_cc | $xp_b}
+									when(/^P$/) {$cv = $ln ? $cv & $xp_nce &$xp_ncd & $xp_ne & $xp_nd : $cv | $xp_ce | $xp_cd | $xp_e | $xp_d}
+									when(/^O$/) {$cv = $ln ? $cv & $xp_nce & $xp_ne : $cv | $xp_ce | $xp_e}
+									when(/^L$/) {$cv = $ln ? $cv & $xp_ncd & $xp_nd : $cv | $xp_cd | $xp_d}
 								}
 								if (not $ln) {
 									pp $kwh{$cp}, 1;
@@ -901,7 +901,7 @@ if ($hsk) {
 	$in_cpp = 0; $in_hsk = 1;
 	if ($cln && $hcln && $bcln) {
 		if ((not $ghcfv) or $iswin) {
-			sys_ds_pmf $mk, $mk612, $xld, $hp, $hpv, $vogl, $vbse, $vh98, "YES", "", $mngar, $mngld, "clean"; 
+			sys_ds_pmf $mk, $mk612, $xld, $hp, $hpv, $vogl, $vbse, $vh98, "YES", "", $mngar, $mngld, "clean";
 			if ($ghcdv && $rs) {
 				sys_ds_pmf $mk, $mk612d, $xld, $hp, $hpv, $vogl, $vbse, $vh98, "NO", "way=dyn", $mngar, $mngld, "clean";
 			}
@@ -923,7 +923,7 @@ if ($hsk) {
 	}
 	if ($bld) {
 		if ((not $ghcfv) or $iswin) {
-			sys_ds_pmf $mk, $mk612, $xld, $hp, $hpv, $vogl, $vbse, $vh98, "YES", "", $mngar, $mngld; 
+			sys_ds_pmf $mk, $mk612, $xld, $hp, $hpv, $vogl, $vbse, $vh98, "YES", "", $mngar, $mngld;
 			if ($ghcdv && $rs) {
 				sys_ds_pmf $mk, $mk612d, $xld, $hp, $hpv, $vogl, $vbse, $vh98, "NO", "way=dyn", $mngar, $mngld;
 			}
@@ -978,7 +978,7 @@ if ($hsk) {
 				}
 			}
 		}
-	}		
+	}
 	if ($rx) {
 		cbtod \my $ql, "ghc-pkg latest qt";
 		$ql == "qt-1.1.4" or die "qt-1.1.4 not found: $!\n";
